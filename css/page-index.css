@@ -1,0 +1,253 @@
+body{
+    background: url("../img/0.png") repeat-x;
+    /*height: 3000px;*/
+}
+.w{      /*固定元素宽度*/
+    width: 940px;
+    margin: 0px auto;
+}
+.header{
+    padding-top: 37px;
+    padding-bottom: 46px;
+}
+.logo{
+    margin-left: 15px;
+}
+.nav{
+    float: right;
+    margin-top: 22px;
+}
+.nav li{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px #d6d6d6 dotted;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/*设置导航条链接样式*/
+.nav a{
+    font: bold 14px Georgia;
+    color: #666;
+    text-decoration: none;
+}
+/*chrome中字体最小12px*/
+.nav p{
+    color: #b7b7b7;
+    font: 11px tahoma;
+}
+
+.nav a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+.banner{
+    height: 356px;
+    background: url("../img/00.png") no-repeat bottom center;
+    position: relative;
+}
+.pointerDIV{
+    position: absolute;
+    /*需要给banner开启相对定位*/
+    top: 314px;
+    left: 15px;
+}
+.pointerDIV a{
+    width: 17px;
+    height: 17px;
+    background-color: red;
+    float: left;
+    background: url("../img/dot1.png") no-repeat;
+    margin-left: 4px;
+}
+
+.pointerDIV .active,
+.pointerDIV a:hover{
+    background: url("../img/dot2.png") no-repeat;
+}
+
+.content h1{
+    text-align: center;
+    font: bold 24px Georgia;
+    padding-top: 6px;
+    background: url("../img/nextlogo.png") no-repeat bottom center;
+    padding-bottom: 20px;
+    margin-bottom: 38px;
+}
+
+.content .pl, .content .cs, .content .uc,
+.contact .sc, .contact .co, .contact .nu{
+    width: 300px;
+    /*background-color: yellow;*/
+    float: left;
+} 
+.content .cs,
+.contact .co{
+    margin: 0px 20px 0px 20px;
+}
+.content{
+    /*background-color: chartreuse;*/
+}
+
+/*解决content高度塌陷问题*/
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content h2{
+    color: #11719e ;
+    font: 21px Georgia;
+}
+.content .p1{
+    color: #8c8c8c;
+    font: 12px Helvetica;
+}
+.content .imgDIV{
+    width: 299px;
+    height: 190px;
+    margin: 16px 0px 10px 0px;
+    text-align: center;
+    padding-top: 12px;
+}
+.content .p2{
+    height: 92px;
+    color: #3e3e3e;
+    font: 13px Helvetica;
+}
+.content .lm{
+    width: 163px;
+    height: 40px;
+    display: block;
+    background: url("../img/more.png") no-repeat;
+    margin-bottom: 35px;
+}
+
+.contact .sc, .contact .co, .contact .nu{
+    /*height: 500px;*/
+    
+}
+
+.contact .txt{
+    width: 276px;
+    height: 33px;
+    background: url("../img/shuru.png") no-repeat;
+    border: none;
+    padding: 0px 10px;
+    margin: 0px 0px 16px;
+    line-height: 33px;
+}
+.contact .tarea{
+    width: 276px;
+    height: 114px;
+    background: url("../img/textarea.jpg") no-repeat;
+    border: none;
+    resize: none;/*设置文本域不可调整大小*/
+    padding: 10px 10px;
+    margin: 0px;
+}
+.contact .btn{
+    width: 163px;
+    height: 32px;
+    background: url("../img/button.png") no-repeat;
+    border: none;
+    padding: 0px;
+    margin: 11px 0px 23px;
+    color:white;
+    font: 130x;
+    text-align: left;
+    text-indent: 1em;
+
+    /*用来设置鼠标指针的样式*/
+    cursor: pointer;
+}
+
+.contact h2{
+    font: 18px/1 Georgia;
+    color: #444;
+    border-bottom: 1px dashed #d3d3d3;
+    padding-top: 44px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.contact{
+    background: url("../img/00.png") no-repeat top center;
+    /*background-color: deepskyblue;*/
+}
+
+.sc .p1{
+    color: #444;
+    font: 12px Helvetica;
+    margin-bottom: 7px;
+}
+
+.icon{
+    font-size: 0px;
+    margin-top: 4px;
+}
+
+.sc .icon a{
+    margin-right: 4px;
+}
+.sc .nl{
+    font: bold 18px/1 "gill sang mt";
+    padding: 30px 0px 10px;
+}
+
+.sc .txt{
+    margin-bottom: 0px;
+}
+
+/*设置右侧栏图片浮动，文字自动围绕*/
+.nu img{
+    float: left;
+    padding-right: 8px;
+}
+
+.nu p{
+    color: #444;
+    font: 12px/1 Helvetica;
+    height: 58px;
+    border-bottom: 1px dashed #d3d3d3;
+    margin-bottom: 14px;
+    padding-bottom: 9px;
+}
+
+
+.nu .no-margin{
+    margin-bottom: 0px;
+}
+
+
+/*底部栏样式*/
+.footer{
+    height: 173px;
+    background-color: #333;
+    border-top: 10px solid #4c4c4c;
+}
+
+.footer a,.footer p{
+    color: #999;
+    font: 11px;
+    text-decoration: none;
+}
+
+.footer .copy{
+    float: right;
+}
+
+.footer .w{
+    padding-top: 18px;
+    
+}
+.footer p{
+    margin-left: 8px;
+    margin-right: 23px;
+    margin-bottom: 6px;
+}
+.footer a:hover{
+    color: #cccaca;
+    text-decoration: underline;
+}
