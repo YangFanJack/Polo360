@@ -14,7 +14,7 @@ body{
     margin-left: 15px;
 }
 .nav{
-    float: right;
+    float: right; 
     margin-top: 22px;
 }
 .nav li{
@@ -89,7 +89,7 @@ body{
     /*background-color: chartreuse;*/
 }
 
-/*解决content高度塌陷问题*/
+/*解决content高度塌陷问题 和 父子元素边界重复问题*/
 .clearfix{
     content: "";
     display: table;
